@@ -5,6 +5,8 @@ export const Home = () => {
 let data = useSelector((state)=> console.log(state));
 
   return (
-    <div>Home</div>
+    <>
+    <h1 className='bg-amber-500'>Home</h1>
+    </>
   )
 }
