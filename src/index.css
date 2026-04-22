@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+@theme{
+    --color-praimary: #00b207
+    --color-bageone: #EA4B48
+    --color-bagetwo: #2388ff
+    --text-hsize: 32px
+}
