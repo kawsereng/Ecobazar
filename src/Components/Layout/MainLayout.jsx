@@ -1,10 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import { HeadNav } from '../HeadNav'
 
 export const MainLayout = () => {
   return (
     <>
-        <div>MainLayout</div>
+        <HeadNav/>
         <Outlet/>
     </>
 
