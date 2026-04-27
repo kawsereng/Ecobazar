@@ -1,11 +1,9 @@
-import React, { Children } from 'react'
 
-export const Container = ({Children,className}) => {
+export const Container = ({children}) => {
   return (
-    <>
-    <div className="mx-w[320px] mx-auto">
-        {Children}
+    <div className='max-w-[1320px] mx-auto'>
+    {children}
     </div>
-    </>
   )
 }
+
