@@ -5,7 +5,12 @@ import { HiChevronDown } from "react-icons/hi";
 export const HeadNav = () => {
   let dropRef = useRef(null)
   let HandelLan = ()=>{
-      dropRef.current.style.display ='block'
+    if(dropRef.current.style.display =='block'){
+      dropRef.current.style.display ='none'
+    }
+      else{
+        dropRef.current.style.display ='block'
+      }
   }
   return (
 
