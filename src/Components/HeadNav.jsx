@@ -51,6 +51,7 @@ let droptakaRef = useRef(null)
             <div className="flex items-center relative after:w-[1px] after:h-[15px] after:bg-[#E6E6E6] after:containt-[''] after:absolute after:top-[17px] after:left-[-10px] py-3.5"><Link to="/Registation">Sign In</Link> / <Link to="/Login">Sign Up</Link></div>
           </div>
         </div>
+        
         </Container>
     </div>
       
