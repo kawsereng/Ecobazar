@@ -6,7 +6,7 @@ export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-  useOutside(sidebarRef, setOpen, open);
+  
 
   return (
     <>
