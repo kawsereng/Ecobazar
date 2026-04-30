@@ -40,7 +40,7 @@ let droptakaRef = useRef(null)
             <div onClick={()=> setTaka(!taka)} className="flex items-center cursor-pointer" ref={droptakaRef}>
               USD <HiChevronDown />
                      {taka &&
-                    <div className="absolute top-[35px] bg-blue-50 p-2">
+                    <div className="absolute top-[35px] bg-blue-50 p-2 ">
                           <ul>
                             <li>Ben</li>
                             <li>ch</li>
