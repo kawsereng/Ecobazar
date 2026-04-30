@@ -20,9 +20,9 @@ let droptakaRef = useRef(null)
   return (
 
     <>
-    <div className="border-b bordar-solid border-b-[#999999]  text-[#666666] text-sm">
+    <div className="border-b bordar-solid border-b-[#f2f2f2]  text-[#666666] text-sm">
        <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between w-[1320px]">
           <div className="flex items-center gap-x-1 font-pop "> <CiLocationOn />Store Location: Lincoln- 344, Illinois, Chicago, USA</div>
           <div className="flex gap-x-5">
             <div onClick={() => setOpen(!open)} className="flex items-center cursor-pointer" ref={dropdowonRef}
