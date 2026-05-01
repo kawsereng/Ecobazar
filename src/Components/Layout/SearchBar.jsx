@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from './Container'
-import logo from '../../assets/Image/logo.webp'
+import logo from "/src/assets/image/logo.webp"
 import { FiSearch } from "react-icons/fi";
 export const SearchBar = () => {
   return (
