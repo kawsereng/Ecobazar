@@ -18,7 +18,7 @@ export const SearchBar = () => {
             />
             <FiSearch className="absolute top-[65px] left-[820px]" />
            
-            <button className='bg-[#00B207] text-white text-sm font-semibold font-pop leading-[120%] px-6 py-4 absolute left-[1280px] rounded-r-lg '>Search</button>
+            <button className='bg-[#00B207] text-white text-sm font-semibold font-pop leading-[120%] px-6 py-4 absolute left-[1280px] rounded-r-lg cursor-pointer'>Search</button>
           
           </div>
 
