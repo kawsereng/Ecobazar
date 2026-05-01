@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from './Container'
+import logo from "../../assets/image/logo.webp";
 import { FiSearch } from "react-icons/fi";
 export const SearchBar = () => {
   return (
@@ -7,12 +8,12 @@ export const SearchBar = () => {
       <Container>
         <div className="flex justify-between">
           <div>
-            <img src="/src/assets/image/logo.webp" />
+            <img src={logo} />
           </div>
 
           <div className='flex'>
             <input type="text"
-              class=" w-[498px] py-3 pl-11  border border-[#808080] text-heading text-[15px] placeholder:text-[#808080] rounded"
+              className="w-[498px] py-3 pl-11 border border-[#808080] text-heading text-[15px] placeholder:text-[#808080] rounded"
               placeholder="Search"
             />
             <FiSearch className="absolute top-[65px] left-[820px]" />
