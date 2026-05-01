@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from './Container'
-import logo from "/src/assets/image/logo.webp"
 import { FiSearch } from "react-icons/fi";
 export const SearchBar = () => {
   return (
@@ -8,7 +7,7 @@ export const SearchBar = () => {
       <Container>
         <div className="flex justify-between">
           <div>
-            <img src={logo} alt="" />
+            <img src="/src/assets/image/logo.webp" />
           </div>
 
           <div className='flex'>
