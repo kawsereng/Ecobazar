@@ -6,7 +6,9 @@ export const Banner = () => {
     <>
     <div className='bg-cyan-500 w-full h-[300px]'>
       <Container>
-       Banner
+       <div>
+        <h1>Banner</h1>
+       </div>
       </Container>
     </div>
     </>
