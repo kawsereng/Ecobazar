@@ -8,7 +8,7 @@ export const SearchBar = () => {
     <>
          <Container className='py-6'>
       {/* logo start here */}
-      <div className='flex justify-between'>
+      <div className='flex justify-between py-[27px]'>
         <div className='flex justify-center items-center'>
           <img 
             src={Logo} 
@@ -19,14 +19,14 @@ export const SearchBar = () => {
         {/* logo ends here */}
 
         {/* search start here */}
-        <div className='flex -shrink-1 relative '>
-          <RiSearchLine className='absolute top-1/2 left-3 -translate-y-1/2' />
-          <input 
-            className='border border-[#808080] w-[498px] py-3 pl-11 placeholder:text-[#808080] placeholder:text-sm placeholder:font-pop rounded-l-md' 
-            type="text"  
-            placeholder='Search' 
-          />
-          <button className='bg-[#00B207] py-3.5 px-6 text-white text-[15px] rounded-r-md'>Search</button>
+        <div className='flex relative '>
+            <RiSearchLine className='absolute top-1/2 left-3 -translate-y-1/2' />
+            <input 
+              className='border border-[#808080] w-[498px] py-3 pl-11 placeholder:text-[#808080] placeholder:text-sm placeholder:font-pop rounded-l-md' 
+              type="text"  
+              placeholder='Search' 
+            />
+            <button className='bg-[#00B207] py-3.5 px-6 text-white text-[15px] rounded-r-md cursor-pointer'>Search</button>
         </div>
         {/* search ends here */}
 
@@ -38,7 +38,7 @@ export const SearchBar = () => {
           </div>
           <div className='flex flex-col'>
             <span className='font-pop text-[12px] text-gray-700'>Shopping cart</span>
-            <span className='font-pop text-[14px] text-gray-900 font-medium'>Amount</span>
+            <span className='font-pop text-[14px] text-gray-900 font-medium'>$57.50</span>
           </div>
         </div>
         {/* carts ends here */}
