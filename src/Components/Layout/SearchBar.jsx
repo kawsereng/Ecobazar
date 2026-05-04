@@ -1,30 +1,49 @@
-import React from 'react'
-import { Container } from './Container'
-import logo from "../../assets/image/logo.webp";
-import { FiSearch } from "react-icons/fi";
+import {Container} from './Container'
+import Logo from '../../assets/logo.webp'
+import { RiSearchLine } from "react-icons/ri";
+import { CiHeart } from "react-icons/ci";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 export const SearchBar = () => {
   return (
     <>
-      <Container>
-        <div className="flex justify-between">
-          <div>
-            <img src={logo} />
-          </div>
-
-          <div className='flex'>
-            <input type="text"
-              className="w-[498px] py-3 pl-11 border border-[#808080] text-heading text-[15px] placeholder:text-[#808080] rounded"
-              placeholder="Search"
-            />
-            <FiSearch className="absolute top-[65px] left-[820px]" />
-           
-            <button className='bg-[#00B207] text-white text-sm font-semibold font-pop leading-[120%] px-6 py-4 absolute left-[1280px] rounded-r-lg cursor-pointer'>Search</button>
-          
-          </div>
-
-          <div>hi</div>
+         <Container className='py-6'>
+      {/* logo start here */}
+      <div className='flex justify-between'>
+        <div className='flex justify-center items-center'>
+          <img 
+            src={Logo} 
+            alt="logo" 
+            fetchpriority="high"
+          />
         </div>
-      </Container>
+        {/* logo ends here */}
+
+        {/* search start here */}
+        <div className='flex -shrink-1 relative '>
+          <RiSearchLine className='absolute top-1/2 left-3 -translate-y-1/2' />
+          <input 
+            className='border border-[#808080] w-[498px] py-3 pl-11 placeholder:text-[#808080] placeholder:text-sm placeholder:font-pop rounded-l-md' 
+            type="text"  
+            placeholder='Search' 
+          />
+          <button className='bg-[#00B207] py-3.5 px-6 text-white text-[15px] rounded-r-md'>Search</button>
+        </div>
+        {/* search ends here */}
+
+        {/* carts start here */}
+        <div className='shrink-0 flex gap-3 items-center'>
+          <div className='flex items-center sm:gap-x-8 gap-x-2 relative after:content[""] after:w-[1px] after:h-6 after:bg-gray-300 after:absolute after:left-1/2'>
+            <CiHeart className='w-8 h-8' />
+            <HiOutlineShoppingBag className='w-8 h-8' />
+          </div>
+          <div className='flex flex-col'>
+            <span className='font-pop text-[12px] text-gray-700'>Shopping cart</span>
+            <span className='font-pop text-[14px] text-gray-900 font-medium'>Amount</span>
+          </div>
+        </div>
+        {/* carts ends here */}
+      </div>
+    </Container>
     </>
   );
 }
