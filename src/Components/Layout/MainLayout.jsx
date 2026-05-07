@@ -5,6 +5,7 @@ import { SearchBar } from './SearchBar'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
 import { Banner } from './Banner'
+import { FooterTop } from './FooterTop'
 
 export const MainLayout = () => {
   return (
@@ -13,8 +14,9 @@ export const MainLayout = () => {
         <SearchBar/>
         <Navbar/>
         <Banner/>
-        <Footer/>
         <Outlet/>
+        <FooterTop/>
+        <Footer/>
     </>
 
   )

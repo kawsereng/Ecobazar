@@ -1,68 +1,31 @@
 import React from 'react'
 import { Container } from './Container'
-import { FaFacebook } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaPinterestSquare } from "react-icons/fa";
-import Flogo from '../../assets/Flogo.png'
+import Flogo from '../../assets/Flogo.webp'
 import { LuPhoneCall } from "react-icons/lu";
+import { Link } from 'react-router';
+import Fcard from '../../assets/Fcard.webp'
 
 
 
 export const Footer = () => {
   return (
     <>
-      <div className="bg-[#F7F7F7] w-full h-[162px]">
-        <Container>
-          <div className="flex justify-between items-center pt-[30px] ">
-            <div className="w-[448px]">
-              <h3 className="text-[#1A1A1A] text-[30px] font-semibold front-pop">
-                Subcribe our Newsletter
-              </h3>
-              <p className=" text-[#999999] text-[16px] font-[400px]  ">
-                Pellentesque eu nibh eget mauris congue mattis mattis nec
-                tellus. Phasellus imperdiet elit eu magna.
-              </p>
-            </div>
-            {/*Subscribe  */}
-            <div>
-              <div className="flex relative ">
-                <input
-                  className="w-[492px] bg-white outline-none rounded-full py-4 pl-6 pr-32 border border-transparent focus:border-primary transition-all"
-                  type="text"
-                  placeholder="Your email address"
-                />
-
-                <button className="bg-[#00B207] py-[16px] px-[40px] text-white text-[15px] rounded-full cursor-pointer absolute right-1">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-            {/* icon */}
-            <div className="flex gap-[10px]">
-              <FaFacebook className="w-[30px] h-[30px] cursor-pointer " />
-              <FaInstagramSquare className="w-[30px] h-[30px] cursor-pointer " />
-              <FaTwitterSquare className="w-[30px] h-[30px] cursor-pointer" />
-              <FaPinterestSquare className="w-[30px] h-[30px] cursor-pointer" />
-            </div>
-          </div>
-        </Container>
-      </div>
-
+      {/* Footer part */}
       <div className="bg-black w-full h-[368px]">
         <Container>
           <div className="flex justify-between items-center pt-[50px]">
-                <div className="text-white w-[350px] ">
+                <div className="text-white max-w-[350px] ">
                     <img src={Flogo} alt="Logo" />
-                    <p className="text-[#808080] pt-[16px] pb-[16px] text-[16px] ">
+                    <p className="text-[#808080] pt-[16px] pb-[16px] text-[16px] front-pop ">
                         Morbi cursus porttitor enim lobortis molestie. Duis gravida
                         turpis dui, eget bibendum magna congue nec.
                     </p>
-                    <div className="fheading col-span-2 flex gap-2 ">
-                        <p className="footerAfter hidden sm:inline">(219) 555-0114</p>
-                        <span className="text-[#808080]">or</span>
-                        <p className="footerAfter">Proxy@gmail.com</p>
+                    <div className='flex gap-4 text-[16px]  front-pop'>
+                     <Link to='tel:219555-0114'>(219) 555-0114</Link>
+                       <span className='text-[#808080]'>or</span>
+                        <Link to='mailto:Proxy@gmail.com'>Proxy@gmail.com</Link>
                     </div>
+                    
                 </div>
 
                 <div className="text-[#808080]"> <h2 className='text-white pb-[20px]'>My Account</h2>
@@ -104,9 +67,12 @@ export const Footer = () => {
           </div>
 
           <div className='border border-b-[#1A1A1A] pt-[60px]'></div>
-          <div className='justify-items-center pt-[20px]'>
-             <h2 className='text-[#808080] '>Ecobazar eCommerce © 2021. All Rights Reserved</h2>
-          </div>
+            <div className='flex justify-between items-center py-5'>
+              
+                <h5 className='text-[#808080] front-pop text-[16px]'>Ecobazar eCommerce © 2021. All Rights Reserved</h5>
+              
+              <img src={Fcard} alt="Fcard" />
+            </div>
          
         </Container>
       </div>
