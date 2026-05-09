@@ -1,28 +1,48 @@
 import {Container} from './Container'
-import { HiChevronDown } from "react-icons/hi";
-import { LuPhoneCall } from "react-icons/lu";
-
+import { Link } from 'react-router'
+import { FaBars } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
+import { PiPhoneCall } from "react-icons/pi";
 export const Navbar = () => {
   return (
     <>
     <div className='bg-[#333333] w-full h-[60px]'>
         <Container>
-        <div className='flex justify-between  '>
-            <div className='front-pop text-[14px] text-white flex items-center h-full pt-[20px]'>
-                <ul className='flex gap-[32px] items-center'>
-                    <li className='flex items-center gap-1'>Home <HiChevronDown /> </li>
-                    <li className='flex items-center gap-1'>Shop <HiChevronDown /></li>
-                    <li className='flex items-center gap-1'>Pages <HiChevronDown /></li>
-                    <li className='flex items-center gap-1'>Blog <HiChevronDown /></li>
-                    <li className='flex items-center gap-1'>About Us <HiChevronDown /></li>
-                    <li className='flex items-center gap-1'>Contact Us <HiChevronDown /></li>
-                </ul>
-            </div>
+         <div className='flex justify-between items-center'>
+          <ul className='flex items-center gap-x-8 text-sm font-pop font-medium'>
+            <li className='flex items-center'>
+              <span className='p-4 bg-[#00B207] h-[60px] flex items-center'>
+                <FaBars size={32} className='text-white'/>
+              </span>
+              <span className='text-white bg-[#3e3939] p-5 h-[60px]'>
+                <Link to="#" className='flex items-center gap-x-10'>
+                  All Categories <FaAngleDown size={22} />
+                </Link>
+              </span>
+            </li>
 
-            <div className='text-white'>
-                <p>Customer Service</p>
-                <p className='flex items-center gap-2'><LuPhoneCall/> (219) 555-0114</p>
-            </div>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>Home <FaAngleDown size={22} /></Link>
+            </li>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>Shop <FaAngleDown size={22} /></Link>
+            </li>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>Pages <FaAngleDown size={22} /></Link>
+            </li>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>Blog <FaAngleDown size={22} /></Link>
+            </li>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>About Us</Link>
+            </li>
+            <li>
+              <Link to="#" className='flex items-center gap-x-1 text-[#808080] hover:text-white'>Contact Us</Link>
+            </li>
+          </ul>
+          <div className='font-pop font-medium text-sm text-white'>
+            <Link to="tel:2195550114" className='flex items-center gap-x-2'> <PiPhoneCall size={32}/>(219) 555-0114</Link>
+          </div>
         </div>
             
         </Container>
