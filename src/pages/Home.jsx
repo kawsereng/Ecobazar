@@ -6,7 +6,7 @@ let data = useSelector((state)=> console.log(state));
 
   return (
     <>
-    <h1 className=''>Home</h1>
+    <h1>Home</h1>
     </>
   )
 }
