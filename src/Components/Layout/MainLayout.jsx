@@ -13,6 +13,7 @@ export const MainLayout = () => {
         <HeadNav/>
         <SearchBar/>
         <Navbar/>
+        
         <Banner/>
         <Outlet/>
         <FooterTop/>
