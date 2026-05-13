@@ -44,8 +44,8 @@ const[all,setAll]=useState(false)
                     className="text-white cursor-pointer"
                   />
                 </span>
-                <span className="text-white bg-[#3e3939] p-5 h-[60px]">
-                  <Link to="#" className="flex items-center gap-x-10"  onClick={() => setAll(!all)}>
+                <span className="text-white bg-[#887979] p-5 h-[60px]">
+                  <Link to="#" className="flex items-center gap-x-10 "  onClick={() => setAll(!all)}>
                     All Categories  <FaAngleDown size={22} />
                   </Link>
                 </span>
@@ -109,64 +109,56 @@ const[all,setAll]=useState(false)
             </div>
           </div>
 
- {/* CATEGORY DROPDOWN */}
-       {all ?(   
-                <div className="relative   w-[254px] bg-white ">
-                  <ul className="text-black ">
+  {/* CATEGORY DROPDOWN */}
+        {all ?(   
+                  <div className="relative    hover:opacity-100  w-[254px] bg-white ">
+                    <ul className="text-black ">
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                     <CiApple className='text-[24px]' /> Fresh Fruit
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                      <CiApple className='text-[24px]' /> Fresh Fruit
+                      </li>
 
-                    <li className=" flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                     <FaBurger /> Vegetables
-                    </li>
+                      <li className=" flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                      <FaBurger className='text-[24px]'/> Vegetables
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                      <IoFishOutline className='text-[24px]'/>River Fish
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                        <IoFishOutline className='text-[24px]'/>River Fish
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                     <GiChickenOven /> Chicken & Meat
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                      <GiChickenOven className='text-[24px]'/> Chicken & Meat
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                      <FaBottleWater className='text-[24px]'/> Drink & Water
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                        <FaBottleWater className='text-[24px]'/> Drink & Water
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                      <TbIceCream  className='text-[24px]'/> Yogurt & Ice Cream
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                        <TbIceCream  className='text-[24px]'/> Yogurt & Ice Cream
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                      <RiCake2Line className='text-[24px]'/> Cake & Bread
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                        <RiCake2Line className='text-[24px]'/> Cake & Bread
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                     <GiButter  className='text-[24px]'/>  Butter & Cream
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                      <GiButter  className='text-[24px]'/>  Butter & Cream
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
-                      <LuCookingPot className='text-[24px]'/>Cooking
-                    </li>
+                      <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
+                        <LuCookingPot className='text-[24px]'/>Cooking
+                      </li>
 
-                    <li className="flex items-center gap-2 p-4 border-t hover:bg-green-500 hover:text-white cursor-pointer">
-                      <FiPlus className='text-[24px]'/>View All Category
-                    </li>
+                      <li className="flex items-center gap-2 p-4 border-t hover:bg-green-500 hover:text-white cursor-pointer">
+                        <FiPlus className='text-[24px]'/>View All Category
+                      </li>
 
-                  </ul>
-                </div>
-                  ) :("")}
-        </Container>
-      </div>
-
-
-
-       
-              
-
-              
-           
+                    </ul>
+                  </div>
+                    ) :("")}
+          </Container>
+        </div>
 
 
 

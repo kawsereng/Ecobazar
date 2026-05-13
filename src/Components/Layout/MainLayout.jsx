@@ -14,7 +14,7 @@ export const MainLayout = () => {
         <SearchBar/>
         <Navbar/>
         
-        <Banner/>
+        {/* <Banner/> */}
         <Outlet/>
         <FooterTop/>
         <Footer/>
