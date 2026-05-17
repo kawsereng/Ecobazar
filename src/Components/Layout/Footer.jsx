@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from './Container'
 import Flogo from '../../assets/Flogo.webp'
-import { LuPhoneCall } from "react-icons/lu";
 import { Link } from 'react-router';
 import Fcard from '../../assets/Fcard.webp'
 
@@ -43,18 +42,18 @@ export const Footer = () => {
             <div className="text-[#808080]"> 
               <h2 className="text-white pb-[20px]">My Account</h2>
               <ul>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+              <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   My Account
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Order History
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Shoping Cart
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Wishlist
-                </li>
+                </li></Link>
               </ul>
             </div>
 
@@ -62,18 +61,18 @@ export const Footer = () => {
               {" "}
               <h3 className="text-white  pb-[20px]">Helps</h3>
               <ul>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+            <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Contact
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Faqs
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Terms & Condition
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Privacy Policy
-                </li>
+                </li></Link>
               </ul>
             </div>
 
@@ -81,18 +80,18 @@ export const Footer = () => {
               {" "}
               <h3 className="text-white  pb-[20px]">Proxy</h3>
               <ul>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+               <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   About
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Shop
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Product
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Track Order
-                </li>
+                </li></Link>
               </ul>
             </div>
 
@@ -100,18 +99,18 @@ export const Footer = () => {
               {" "}
               <h3 className="text-white  pb-[20px]">Categories</h3>
               <ul>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Fruit & Vegetables
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Meat & Fish
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Bread & Bakery
-                </li>
-                <li className="pb-[10px] hover:text-white cursor-pointer">
+                </li></Link>
+                <Link to="#"><li className="pb-[10px] hover:text-white cursor-pointer">
                   Beauty & Health
-                </li>
+                </li></Link>
               </ul>
             </div>
           </div>
