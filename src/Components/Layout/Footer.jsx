@@ -40,8 +40,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <div className="text-[#808080]">
-              {" "}
+            <div className="text-[#808080]"> 
               <h2 className="text-white pb-[20px]">My Account</h2>
               <ul>
                 <li className="pb-[10px] hover:text-white cursor-pointer">
