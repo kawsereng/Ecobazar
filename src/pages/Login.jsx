@@ -47,7 +47,7 @@ const [showPassword, setShowPassword] = useState(false);
             Remember me
           </label>
 
-          <Link className="text-[16px] text-[#666666] hover:to-blue-800 transition" to="/Forget">
+          <Link className="text-[16px] text-[#00B207]" to="/Forget">
             Forget Password
           </Link>
         </div>
