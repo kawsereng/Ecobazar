@@ -32,9 +32,9 @@ export const Navbar = () => {
  
   return (
     <>
-      <div className="bg-[#333333] w-full h-[60px] ">
+      <div className="bg-[#333333] w-full h-[60px]  ">
         <Container>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ">
             <div className="flex items-center ">
               {" "}
               <FaBars
@@ -116,7 +116,7 @@ export const Navbar = () => {
 
           {/* CATEGORY DROPDOWN */}
           {all && (
-            <div className="relative    hover:opacity-100  w-[240px] bg-white ">
+            <div className="relative z-10    hover:opacity-100  w-[240px] bg-white ">
               <ul className="text-black ">
                 <li className="flex items-center gap-2 p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                   <CiApple className="text-[24px]" /> Fresh Fruit
@@ -166,10 +166,13 @@ export const Navbar = () => {
         </Container>
       </div>
 
+
+
+
       {/* Sidebar */}
 
       {show ? (
-        <div className="w-[420px] h-full bg-white p-6 border-r border-gray-200 top-0  absolute duration-300">
+        <div className="z-10 w-[420px] h-full bg-white p-6 border-r border-gray-200 top-0  absolute duration-300">
           {/* Top */}
           <div className="flex items-center justify-between mb-10">
             <h2 className="text-[24px] font-semibold text-black">Menu</h2>

@@ -6,7 +6,21 @@ import { Link } from 'react-router';
 export const Registation = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [pass,setPass] = useState(false)
+
+  // validation Backend 
+  const[regData,setRegData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+    terms: false
+  });
+
+  let handleChange = (e) => {
   
+    setRegData({...regData, [e.target.name]: e.target.value})
+    console.log(e.target.name,e.target.value);
+  };
+
   return (
     <>
     <Container>
@@ -20,7 +34,7 @@ export const Registation = () => {
 
          {/* Email */}
         <div className="mb-5">
-          <input
+          <input onChange={handleChange}
             type="email"
             placeholder="Email"
             className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border-gray-300 rounded-md px-4 text-lg outline-[#999999] "
@@ -29,7 +43,7 @@ export const Registation = () => {
 
         {/* Password */}
                 <div className="mb-5 relative">
-                  <input
+                  <input onChange={handleChange}
                     type={ showPassword? "text" : "password" } 
                     placeholder="Password"
                     className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border border-gray-300 rounded-md px-4 pr-12 text-lg outline-[#999999] "
@@ -45,7 +59,7 @@ export const Registation = () => {
 
                 {/* Confirm Password */}
                         <div className="mb-5 relative">
-                          <input
+                          <input onChange={handleChange}
                             type={pass ? "text" : "password" }
                             placeholder="Confirm password"
                             className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border border-gray-300 rounded-md px-4 pr-12 text-lg outline-[#999999] "
@@ -60,18 +74,18 @@ export const Registation = () => {
                         </div>
 
               <label className="flex items-center gap-2 text-[#666666] font-pop text-[16px] cursor-pointer">
-            <input type="checkbox"  className='w-5 h-5'/>
+            <input onChange={handleChange} type="checkbox"  className='w-5 h-5'/>
             Accept all terms & Conditions
           </label>
 
 
           {/* Button */}
-        <button className="w-[472px] h-[46px] mt-5 bg-[#00B207] hover:bg-green-600 transition text-white font-semibold rounded-full">
+        <button  className="w-[472px] h-[46px] mt-5 bg-[#00B207] hover:bg-green-600 transition text-white font-semibold rounded-full">
           Login
         </button>
          
                  {/* Register */}
-        <p className="text-center text-[#666666] text-[16px] font-pop mt-8">
+        <p  className="text-center text-[#666666] text-[16px] font-pop mt-8">
           Don’t have account? <Link className='font-medium text-4 font-pop text-[#1A1A1A]' to="/Login">Login</Link>
         </p>
        

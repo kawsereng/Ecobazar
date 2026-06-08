@@ -4,7 +4,6 @@ import {HeadNav}from '../HeadNav'
 import { SearchBar } from './SearchBar'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
-import { Banner } from './Banner'
 import { FooterTop } from './FooterTop'
 import { Breadcrumbs } from './Breadcrumbs'
 
@@ -17,7 +16,6 @@ export const MainLayout = () => {
         <SearchBar/>
         <Navbar/>
        {PageName !=='/'&& <Breadcrumbs/>}
-        <Banner/>
         <Outlet/>
         <FooterTop/>
         <Footer/>
