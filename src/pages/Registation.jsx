@@ -20,7 +20,11 @@ export const Registation = () => {
     setRegData({...regData, [e.target.name]: e.target.value})
     console.log(e.target.name,e.target.value);
   };
-
+  let handleClick = () => {
+ console.log(regData);
+ 
+  }
+  
   return (
     <>
     <Container>
@@ -34,7 +38,7 @@ export const Registation = () => {
 
          {/* Email */}
         <div className="mb-5">
-          <input onChange={handleChange}
+          <input onChange={handleChange} name='email'
             type="email"
             placeholder="Email"
             className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border-gray-300 rounded-md px-4 text-lg outline-[#999999] "
@@ -43,7 +47,7 @@ export const Registation = () => {
 
         {/* Password */}
                 <div className="mb-5 relative">
-                  <input onChange={handleChange}
+                  <input onChange={handleChange} name='password'
                     type={ showPassword? "text" : "password" } 
                     placeholder="Password"
                     className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border border-gray-300 rounded-md px-4 pr-12 text-lg outline-[#999999] "
@@ -59,7 +63,7 @@ export const Registation = () => {
 
                 {/* Confirm Password */}
                         <div className="mb-5 relative">
-                          <input onChange={handleChange}
+                          <input onChange={handleChange} name='confirmPassword'
                             type={pass ? "text" : "password" }
                             placeholder="Confirm password"
                             className="w-full h-[56px] text-[16px] text-[#999999] font-normal font-pop border border border-gray-300 rounded-md px-4 pr-12 text-lg outline-[#999999] "
@@ -74,13 +78,13 @@ export const Registation = () => {
                         </div>
 
               <label className="flex items-center gap-2 text-[#666666] font-pop text-[16px] cursor-pointer">
-            <input onChange={handleChange} type="checkbox"  className='w-5 h-5'/>
+            <input onChange={handleChange} name='terms' type="checkbox"  className='w-5 h-5'/>
             Accept all terms & Conditions
           </label>
 
 
           {/* Button */}
-        <button  className="w-[472px] h-[46px] mt-5 bg-[#00B207] hover:bg-green-600 transition text-white font-semibold rounded-full">
+        <button  onClick={handleClick} className="w-[472px] h-[46px] mt-5 bg-[#00B207] hover:bg-green-600 transition text-white font-semibold rounded-full">
           Login
         </button>
          

@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 export const FooterTop = () => {
   return (
     <>
-      <div className="bg-[#F7F7F7] w-full h-[162px]">
+      <div className="bg-[#F7F7F7] h-[162px]">
         <Container>
           <div className="flex justify-between items-center pt-[30px] ">
             <div className="w-[448px]">

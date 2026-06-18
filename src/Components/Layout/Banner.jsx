@@ -10,6 +10,7 @@ import "swiper/css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';;
+
 export const Banner = () => {
   return (
     <>
@@ -84,7 +85,7 @@ export const Banner = () => {
       
       </Container>
         {/* Fitured */}
-          <div className='w-full ml-[255px]'>
+          <div className='ml-[255px]'>
             <img src={Line} alt="Line" />
           </div>
     </>
