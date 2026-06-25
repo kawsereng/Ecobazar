@@ -85,7 +85,7 @@ export const Banner = () => {
       
       </Container>
         {/* Fitured */}
-          <div className='ml-[255px]'>
+          <div className='ml-[500px]'>
             <img src={Line} alt="Line" />
           </div>
     </>
