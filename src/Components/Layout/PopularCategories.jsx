@@ -51,15 +51,7 @@ export const PopularCategories = () => {
                 </Link>
             </div>
             <div className='item flex gap-2'>
-                {/* {allpro.map((item)=>(
-                    <div className='border-4  '>
-                        <h3 className='grid grid-cols-6 gap-3'>{item.name}</h3> 
-                     </div>
-                    
-                    
-                )
-            
-            )} */}
+
             <div className='flex grid grid-cols-6 gap-5 text-[#1A1A1A] text-[18px] font-medium'>
                 
                     <div className='border border-2 border-[#E5E5E5] rounded-lg w-[200px] h-[190px] hover:bordar border-2 bordar-[#2C742F] hover:border-[#00B207] rounded-lg'>
