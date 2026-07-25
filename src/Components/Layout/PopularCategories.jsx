@@ -1,8 +1,6 @@
-// import { useEffect, useState } from 'react'
 import { Container } from './Container'
 import { Link } from 'react-router'
 import { GoArrowRight } from "react-icons/go";
-// import axios from 'axios';
 import Fresh from '../../assets/Categories/Fresh.webp'
 import Vegetables from '../../assets/Categories/Vegetables.webp'
 import Meat from '../../assets/Categories/Meat.webp'
@@ -15,30 +13,9 @@ import Cooking from '../../assets/Categories/Cooking.webp'
 import Diabetic from '../../assets/Categories/Diabetic.webp'
 import Dish from '../../assets/Categories/Dish.webp'
 import Oil from '../../assets/Categories/Oil.webp'
-import Sale from '../../assets/Sale.webp'
 
 export const PopularCategories = () => {
-//  let[allpro,setAllpro]= useState([])
 
-
-// useEffect(() =>{
-//    async function Allpro(){
-//     let proData = await axios.get("https://dummyjson.com/products/categories")
-//     setAllpro(proData.data)
-    
-    
-    
-//    }
-//    Allpro()
-//     })
- 
-// useEffect(()=>{
-//     fetch('https://dummyjson.com/products/categories')
-//     .then(Response=>Response.json)
-//     .then(data=>data.categories)
-//     console.log(data);
-    
-// })
 
   return (
  <>

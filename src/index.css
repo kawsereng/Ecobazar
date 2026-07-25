@@ -82,12 +82,15 @@
 
 .next-arrowone:hover{
   background:#00B207;
+   margin-top: 60px;
 }
 .prev-arrowone:hover{
   background: #00B207;
+ 
 }
 .next-arrowone,
 .prev-arrowone{
+   margin-top: 60px;
   width: 50px;
   height: 50px;
   border-radius: 50%;

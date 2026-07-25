@@ -5,6 +5,9 @@ import { PopularCategories } from '../Components/Layout/PopularCategories';
 import { Products } from '../Components/Layout/Products';
 import { SaleBanner } from '../Components/Layout/SaleBanner';
 import { LatestNews } from '../Components/Layout/LatestNews';
+import { ClientTestimonials } from '../Components/Layout/ClientTestimonials';
+import { HotDeals } from '../Components/Layout/HotDeals';
+import CompanyName from '../Components/Layout/CompanyName';
 
 export const Home = () => {
 
@@ -15,7 +18,10 @@ export const Home = () => {
     <PopularCategories/>
     <Products/>
     <SaleBanner/>
+    <HotDeals/>
     <LatestNews/>
+    <ClientTestimonials/>
+    <CompanyName/>
     </>
   )
 }

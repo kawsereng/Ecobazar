@@ -1,5 +1,5 @@
-import {Container} from "./Layout/Container"
-import { useOutside } from "./Hooks/Outside";
+import {Container} from "./Container"
+import { useOutside } from "../Hooks/Outside";
 import { CiLocationOn } from "react-icons/ci";
 import { HiChevronDown } from "react-icons/hi";
 import { useState,useRef } from "react";

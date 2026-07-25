@@ -4,32 +4,33 @@ import { RiSearchLine } from "react-icons/ri";
 import { CiHeart } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+
 export const SearchBar = () => {
   return (
-    <>
+    
          <Container className='py-6'>
       {/* logo start here */}
-      <div className='flex justify-between py-[27px]'>
-        <div className='flex justify-center items-center'>
-          <Link to="/"> <img src={Logo} alt="logo" fetchpriority="high"/> </Link> 
+      <div className='flex flex-col items-center lg:flex-row justify-between gap-4 py-[27px]'>
+        <div className='flex justify-center lg:justify-start items-center'>
+          <Link to="/"> <img src={Logo} alt="logo" fetchPriority="high"/> </Link> 
         </div>
         {/* logo ends here */}
 
         {/* search start here */}
-        <div className='flex relative '>
+        <div className='flex relative w-full  lg:w-auto '>
             <RiSearchLine className='absolute top-1/2 left-3 -translate-y-1/2' />
             <input 
-              className='border border-[#808080] w-[498px] py-3 pl-11 placeholder:text-[#808080] placeholder:text-sm placeholder:font-pop rounded-l-md' 
+              className='border border-[#808080] w-full lg:w-[498px] py-3 pl-11 placeholder:text-[#808080] placeholder:text-sm placeholder:font-pop rounded-l-md' 
               type="text"  
               placeholder='Search' 
             />
-            <button className='bg-[#00B207] py-3.5 px-6 text-white text-[15px] rounded-r-md cursor-pointer'>Search</button>
+            <button className='bg-[#00B207] py-3.5 px-4 lg:px-6 text-white text-[15px] rounded-r-md cursor-pointer'>Search</button>
         </div>
         {/* search ends here */}
 
         {/* carts start here */}
-        <div className='shrink-0 flex gap-3 items-center'>
-          <div className='flex items-center sm:gap-x-8 gap-x-2 relative after:content[""] after:w-[1px] after:h-6 after:bg-gray-300 after:absolute after:left-1/2'>
+        <div className='shrink-0 flex gap-3  items-center justify-center lg:justify-start'>
+          <div className='flex items-center  sm:gap-x-8 gap-x-2 relative after:content[""] after:w-[1px] after:h-6 after:bg-gray-300 after:absolute after:left-1/2'>
             <CiHeart className='w-8 h-8' />
             <HiOutlineShoppingBag className='w-8 h-8' />
           </div>
@@ -41,6 +42,6 @@ export const SearchBar = () => {
         {/* carts ends here */}
       </div>
     </Container>
-    </>
+   
   );
 }

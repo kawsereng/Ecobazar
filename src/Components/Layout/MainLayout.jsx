@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, useLocation } from 'react-router'
-import {HeadNav}from '../HeadNav'
+import {HeadNav}from '../Layout/HeadNav'
 import { SearchBar } from './SearchBar'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
@@ -13,7 +13,7 @@ export const MainLayout = () => {
   return (
     <>
         <HeadNav/>
-        <SearchBar/>
+        <SearchBar className=''/>
         <Navbar/>
        {PageName !=='/'&& <Breadcrumbs/>}
         <Outlet/>
