@@ -61,9 +61,9 @@ export const HotDeals = () => {
     <>
     <Container>
         <div className='main mt-[50px]'>
-           <div className='flex items-center justify-between mb-[32px] gap-3'>
-                <h4 className='text-[#1A1A1A] font-semibold text-[24px] sm:text-[28px] lg:text-[32px]'>Hot Deals</h4>
-                <Link to="#" className='flex items-center text-[#00B207] font-medium text-[14px] sm:text-[16px] whitespace-nowrap'>
+          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-[20px] sm:mb-[32px] gap-4 sm:gap-0'>
+                <h4 className='text-[#1A1A1A] font-semibold text-[24px] sm:text-[32px]'>Hot Deals</h4>
+                <Link className='flex items-center text-[#00B207] font-medium text-[14px] sm:text-[16px]'>
                     View All <GoArrowRight className='ml-2' />
                 </Link>
             </div>

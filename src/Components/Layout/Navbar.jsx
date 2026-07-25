@@ -1,4 +1,4 @@
-import {Container} from './Container'
+import { Container } from './Container'
 import { Link } from 'react-router'
 import { FaBars } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
@@ -18,20 +18,20 @@ import { LuCookingPot } from "react-icons/lu";
 import { FiPlus } from "react-icons/fi";
 
 export const Navbar = () => {
-    // category state
-    const[all,setAll]=useState(false)
- let dropdownRef  =useRef(null)
+  // category state
+  const [all, setAll] = useState(false)
+  let dropdownRef = useRef(null)
   // outside click
   useOutside(dropdownRef, setAll, all);
-      // sidebar
-     const[show,setShow]=useState(false)
+  // sidebar
+  const [show, setShow] = useState(false)
 
-   
 
- 
+
+
   return (
     <>
-      <div className="bg-[#333333] w-full md:py-0    ">
+      <div className=" relative bg-[#333333] w-full md:py-0    ">
         <Container>
           <div className="flex justify-between items-center gap-3 md:gap-0">
             <div className="flex items-center w-full justify-between sm:w-auto md:w-auto md:justify-start">
@@ -117,7 +117,7 @@ export const Navbar = () => {
 
           {/* CATEGORY DROPDOWN */}
           {all && (
-            <div className="relative z-20 w-full md:w-[240px] bg-white shadow-lg">
+            <div className="absolute z-20 w-full md:w-[208px] bg-white shadow-lg">
               <ul className="text-black ">
                 <li className="flex items-center gap-2 p-3 md:p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                   <CiApple className="text-xl md:text-[24px]" /> Fresh Fruit
@@ -192,25 +192,25 @@ export const Navbar = () => {
                 <div className="flex items-center gap-2">
                   Home
                 </div>
-                <FaAngleDown size={16}/>
+                <FaAngleDown size={16} />
               </li>
               <li className="flex border-b border-gray-100 items-center justify-between p-3 md:p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                 <div className="flex items-center gap-2">
                   Shop
                 </div>
-                <FaAngleDown size={16}/>
+                <FaAngleDown size={16} />
               </li>
               <li className="flex border-b border-gray-100 items-center justify-between p-3 md:p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                 <div className="flex items-center gap-2">
                   Pages
                 </div>
-                <FaAngleDown size={16}/>
+                <FaAngleDown size={16} />
               </li>
               <li className="flex border-b border-gray-100 items-center justify-between p-3 md:p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                 <div className="flex items-center gap-2">
                   Blog
                 </div>
-                <FaAngleDown size={16}/>
+                <FaAngleDown size={16} />
               </li>
               <li className="flex border-b border-gray-100 items-center gap-2 p-3 md:p-4 hover:bg-green-500 hover:text-white cursor-pointer">
                 About Us

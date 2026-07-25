@@ -11,7 +11,7 @@ export const SaleBanner = () => {
     
     <Container>
         <div className='flex gap-[24px] mt-[60px] mb-[60px]'>
-            <div  className='relative'>
+            <div className='hidden md:block relative'>
               <div className=''><img src={SaleBanner1} alt="SaleBanner1" /> </div>
              <div className='absolute top-0 left-[135px] mt-[123px] font-pop font-normal text-[24px] text-[#ffffff]'><Timer/>
                 <div className='flex text-[12px] gap-[14px] '>
@@ -22,8 +22,8 @@ export const SaleBanner = () => {
                 </div>
              </div>
             </div>
-            <div><img src={SaleBanner2} alt="SaleBanner2" /></div>
-            <div><img src={SaleBanner3} alt="SaleBanner3" /></div>
+            <div className='w-full md:w-auto'><img src={SaleBanner2} alt="SaleBanner2" className='w-full md:w-auto' /></div>
+            <div className='hidden md:block'><img src={SaleBanner3} alt="SaleBanner3" /></div>
             
         </div>
     </Container>

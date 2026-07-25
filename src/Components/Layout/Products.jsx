@@ -39,13 +39,13 @@ export const Products = () => {
     <>
     <Container>
         <div className='main mt-[50px]'>
-           <div className='flex justify-between mb-[32px]'>
-                <h4 className='text-[#1A1A1A] font-semibold text-[32px]'>Popular Products</h4>
-                <Link className='flex items-center text-[#00B207] font-medium text-[16px]'>
+          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-[20px] sm:mb-[32px] gap-4 sm:gap-0'>
+                <h4 className='text-[#1A1A1A] font-semibold text-[24px] sm:text-[32px]'>Popular Products</h4>
+                <Link className='flex items-center text-[#00B207] font-medium text-[14px] sm:text-[16px]'>
                     View All <GoArrowRight className='ml-2' />
                 </Link>
             </div>
-            <div className='grid grid-cols-5 gap-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
                 {pro.map((item)=>(
                     <div key={item.id} className='border border-1 border-[#E5E5E5] hover:border-[#00B207] transition-colors duration-300 relative group'>
                         <div className='p-4 flex items-center justify-center'>
