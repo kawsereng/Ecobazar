@@ -89,7 +89,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/About"
                     className="flex items-center gap-x-1 text-[#808080] hover:text-white"
                   >
                     About Us
@@ -97,7 +97,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/Contact"
                     className="flex items-center gap-x-1 text-[#808080] hover:text-white"
                   >
                     Contact Us

@@ -3,7 +3,7 @@ import { Container } from './Container'
 import axios from 'axios'
 import { GoArrowRight } from "react-icons/go";
 import { FaStar, FaStarHalfAlt, FaRegStar, FaHeart, FaEye, FaShoppingBag } from "react-icons/fa";
-import Apple from '../../assets/Categories/Apple.webp'
+// import Apple from '../../assets/Categories/Apple.webp'
 import { Link } from 'react-router';
 
 export const HotDeals = () => {
@@ -11,9 +11,8 @@ export const HotDeals = () => {
  let [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
     useEffect(()=>{
         async function allpro(){
-            let proData=await axios.get('https://dummyjson.com/products')
-            setPro(proData.data.products.slice(0, 15));
-            
+            let proData=await axios.get('https://ecobazar-api.onrender.com/api/products?hotDeals=true&limit=12')
+            setPro(proData.data.data.products.slice(0, 10));
         }
         allpro()
     }, [])
@@ -82,109 +81,109 @@ export const HotDeals = () => {
                     ]
 
                     return (
-                        
-                        <div key={item.id} >
-                           <div
-    className="border border-[#E5E5E5] hover:border-[#00B207] transition-all duration-300 bg-white relative group overflow-hidden"
->
-  {/* Image */}
-  <div className="p-5 flex items-center justify-center h-52">
-    <img
-      src={Apple}
-      alt={item.title}
-      className="w-full max-w-[220px] h-40 object-contain"
-    />
-  </div>
+                      <div key={item.id}>
+                        <div className="border border-[#E5E5E5] hover:border-[#00B207] transition-all duration-300 bg-white relative group overflow-hidden">
+                          {/* Image */}
+                          <div className="p-5 flex items-center justify-center h-52">
+                            <img
+                              src={item.thumbnail.url}
+                              alt={item.title.en}
+                              className="w-full h-48 object-contain"
+                            />
+                          </div>
 
-  {/* Content */}
-  <div className="relative px-4 pb-4 h-[220px]">
-    {/* Default */}
-    <div className="transition-opacity duration-300 group-hover:opacity-0">
-      <div className="flex items-start justify-between">
-        <div>
-          {/* Title */}
-          <h3 className="text-[#1A1A1A] font-medium text-sm mb-2">
-            {item.title}
-          </h3>
+                          {/* Content */}
+                          <div className="relative px-4 pb-4 h-[220px]">
+                            {/* Default */}
+                            <div className="transition-opacity duration-300 group-hover:opacity-0">
+                              <div className="flex items-start justify-between">
+                                <div>
+                                  {/* Title */}
+                                  <h3 className="text-[#1A1A1A] font-medium text-sm mb-2">
+                                    {item.title.en}
+                                  </h3>
 
-          {/* Price */}
-          <div className="text-[#1A1A1A] font-semibold text-lg">
-            ${currentPrice}
-          </div>
+                                  {/* Price */}
+                                  <div className="text-[#1A1A1A] font-semibold text-lg">
+                                    ${item.price}
+                                  </div>
 
-          {/* Rating */}
-          <div className="mt-2 flex">
-            {renderStars(item.rating)}
-          </div>
-        </div>
+                                  {/* Rating */}
+                                  <div className="mt-2 flex">
+                                    {renderStars(item.rating)}
+                                  </div>
+                                </div>
 
-        <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white transition">
-          <FaShoppingBag className='ml-3' size={14} />
-        </button>
-      </div>
-    </div>
+                                <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white transition">
+                                  <FaShoppingBag className="ml-3" size={14} />
+                                </button>
+                              </div>
+                            </div>
 
-    {/* Hover Content */}
-    <div className="absolute inset-0 px-4 pb-4 flex flex-col items-center text-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
+                            {/* Hover Content */}
+                            <div className="absolute inset-0 px-4 pb-4 flex flex-col items-center text-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
+                              <div className="w-full flex items-center gap-3">
+                                <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white">
+                                  <FaHeart className="ml-3" size={14} />
+                                </button>
 
-      <div className="w-full flex items-center gap-3">
-        <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white">
-          <FaHeart className='ml-3' size={14} />
-        </button>
+                                <button className="flex-1 h-[42px] rounded-full bg-[#00B207] text-white flex items-center justify-center gap-2 hover:bg-green-700 transition">
+                                  <span className="text-[14px] text-center">
+                                    Add to Cart
+                                  </span>{" "}
+                                  <FaShoppingBag className="" size={14} />
+                                </button>
 
-        <button className="flex-1 h-[42px] rounded-full bg-[#00B207] text-white flex items-center justify-center gap-2 hover:bg-green-700 transition">
-          <span className='text-[14px] text-center'>Add to Cart</span> <FaShoppingBag className='' size={14} />
-        </button>
+                                <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white">
+                                  <FaEye className="ml-3" size={14} />
+                                </button>
+                              </div>
 
-        <button className="w-10 h-10 rounded-full bg-[#F2F2F2] hover:bg-[#00B207] hover:text-white">
-          <FaEye className='ml-3' size={14} />
-        </button>
-      </div>
+                              {/* Title */}
+                              <h3 className="mt-4 text-[#00B207] font-medium">
+                                {item.title.en}
+                              </h3>
 
-      {/* Title */}
-      <h3 className="mt-4 text-[#00B207] font-medium">
-        {item.title}
-      </h3>
+                              {/* Price */}
+                              <div className="mt-2 flex gap-2 items-center">
+                                <span className="text-xl font-semibold">
+                                  $৳{item.price}
+                                </span>
 
-      {/* Price */}
-      <div className="mt-2 flex gap-2 items-center">
-        <span className="text-xl font-semibold">
-          ${currentPrice}
-        </span>
+                                <span className="text-[#999] line-through">
+                                  ${oldPrice}
+                                </span>
+                              </div>
 
-        <span className="text-[#999] line-through">
-          ${oldPrice}
-        </span>
-      </div>
+                              <div className="mt-2 flex items-center gap-2">
+                                {renderStars(item.rating)}
+                                <span className="text-sm text-[#666]">
+                                  (524 Feedback)
+                                </span>
+                              </div>
 
-      <div className="mt-2 flex items-center gap-2">
-        {renderStars(item.rating)}
-        <span className="text-sm text-[#666]">
-          (524 Feedback)
-        </span>
-      </div>
+                              <p className="mt-4 text-sm text-[#999]">
+                                Hurry up! Offer ends In:
+                              </p>
 
-      <p className="mt-4 text-sm text-[#999]">
-        Hurry up! Offer ends In:
-      </p>
-
-      {/* Timer */}
-      <div className="mt-3 flex gap-2">
-        {countdownItems.map((t) => (
-          <div key={t.label} className="text-center">
-            <div className="font-semibold">{t.value}</div>
-            <div className="text-[10px] text-[#999]">
-              {t.label}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
-
+                              {/* Timer */}
+                              <div className="mt-3 flex gap-2">
+                                {countdownItems.map((t) => (
+                                  <div key={t.label} className="text-center">
+                                    <div className="font-semibold">
+                                      {t.value}
+                                    </div>
+                                    <div className="text-[10px] text-[#999]">
+                                      {t.label}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    )
+                      </div>
+                    );
                 })}
             </div>
      
