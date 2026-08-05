@@ -60,13 +60,13 @@ export const HotDeals = () => {
     <>
     <Container>
         <div className='main mt-[50px]'>
-          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-[20px] sm:mb-[32px] gap-4 sm:gap-0'>
+          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-[20px] p-2 sm:mb-[32px] gap-4 sm:gap-0'>
                 <h4 className='text-[#1A1A1A] font-semibold text-[24px] sm:text-[32px]'>Hot Deals</h4>
                 <Link className='flex items-center text-[#00B207] font-medium text-[14px] sm:text-[16px]'>
                     View All <GoArrowRight className='ml-2' />
                 </Link>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2'>
+            <div className='grid grid-cols-1 p-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2'>
                 {pro.map((item, index)=> {
                     const isFeatured = index === 0
                     const oldPrice = (Number(item.price) * 2).toFixed(2)
@@ -147,7 +147,7 @@ export const HotDeals = () => {
                               {/* Price */}
                               <div className="mt-2 flex gap-2 items-center">
                                 <span className="text-xl font-semibold">
-                                  $৳{item.price}
+                                  ${item.price}
                                 </span>
 
                                 <span className="text-[#999] line-through">

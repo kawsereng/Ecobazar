@@ -8,6 +8,13 @@ import Headphone from '../assets/svg/Headphone';
 import Leaf from '../assets/svg/Leaf';
 import Star from '../assets/svg/Star.jsx';
 import { Container } from '../Components/Layout/Container';
+import { ClientTestimonials } from '../Components/Layout/ClientTestimonials.jsx';
+import CompanyName from '../Components/Layout/CompanyName.jsx';
+
+
+
+
+
 const About = () => {
   return (
     
@@ -17,7 +24,7 @@ const About = () => {
           <div className='flex justify-between items-center gap-x-10'>
             <div className="w-151">
               <h1 className='font-pop font-semibold text-[56px] text-logoc leading-[120%] pb-8'>100% Trusted Organic Food Store</h1>
-              <p className='font-pop font-normal text-[18px] text-gry leading-[150%]'>Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.
+              <p className='font-pop font-normal text-[18px] text-[#666666] leading-[150%]'>Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.
               </p>
             </div>
             <div className="w-179">
@@ -30,7 +37,7 @@ const About = () => {
         <div >
           <div className='w-142.5'>
             <h1 className='font-pop font-semibold text-[56px] text-logoc leading-[120%] pb-8'>100% Trusted Organic Food Store</h1>
-            <p className='font-pop font-normal text-[16px] text-gryd leading-[150%]'>Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.</p>
+            <p className='font-pop font-normal text-[16px]  text-[#666666] leading-[150%]'>Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.</p>
           </div>
 
           <div className="flex items-center gap-x-6 pt-6">
@@ -112,9 +119,17 @@ const About = () => {
           </div>
         </div>
       </div>
+
+        <ClientTestimonials />
+
+
+        <CompanyName></CompanyName>
       </Container>
     
   )
 }
 
 export default About;
+
+
+

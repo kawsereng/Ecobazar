@@ -57,27 +57,27 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder='Name'
-                  className='w-full border border-brdr rounded-md font-pop font-normal text-base text-[#666666] placeholder:text-gry leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
+                  className='w-full border border-brdr rounded-md font-pop font-normal text-[#666666]  font-normal text-[16px]  leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder='Email'
-                  className='w-full border border-brdr rounded-md font-pop font-normal text-base text-[#666666] placeholder:text-gry leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
+                  className='w-full border border-brdr rounded-md  font-normal text-[16px] font-pop font-normal text-[#666666]  leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
                 />
               </div>
-              <input
+              <input   
                 type="text"
                 name="hello"
                 placeholder='Hello'
-                className='w-full border border-brdr rounded-md font-pop font-normal text-base text-[#666666] placeholder:text-gry leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
+                className='w-full border border-brdr rounded-md font-normal text-[16px] font-pop font-normal text-[#666666] leading-[130%] py-3.5 ps-4 outline-none focus:border-primary'
               />
               <div className="pt-4 pb-6">
                 <input
                   type="text"
                   name="subject"
                   placeholder='Subject'
-                  className='w-full border border-brdr rounded-md font-pop font-normal text-base text-[#666666] placeholder:text-gry leading-[130%] pt-3.5 pb-15.75 ps-4 outline-none focus:border-primary'
+                  className='w-full border border-brdr rounded-md font-normal text-[16px] font-pop font-normal text-[#666666]  leading-[130%] pt-3.5 pb-15.75 ps-4 outline-none focus:border-primary'
                 />
               </div>
               <button className="bg-primary bg-[#00B207] text-white text-[16px] font-semibold font-pop leading-[120%] px-10 py-4 rounded-[46px] cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed">

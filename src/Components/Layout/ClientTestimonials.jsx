@@ -12,10 +12,10 @@ import { Container } from './Container';
 export const ClientTestimonials = () => {
   return (
     <>
-            <div className='bg-[#F2F2F2] mt-15 '>
+            <div className='mt-15 mb-[50px]'>
             <Container>
-                <div className='relative bg-[#F2F2F2] '>
-            <div className='pt-15 font-pop font-semibold text-2xl text-[32px] text-[#1A1A1A] relative'>Client Testimonials</div>
+                <div className='relative  '>
+            <div className='pt-15 font-pop font-semibold text-2xl sm:text-[32px] text-[24px] text-[#1A1A1A] relative'>Client Testimonials</div>
             <div className='prev-arrowone'><FaArrowLeft /></div>
             <div className='next-arrowone'><FaArrowRight /></div>
             <div className='mt-9'>
@@ -33,7 +33,7 @@ export const ClientTestimonials = () => {
                 }}
                 modules={[Navigation]}
                 >
-                <SwiperSlide><img src={Testimonial} alt="BannerBig" className='w-full h-auto' /></SwiperSlide>
+                <SwiperSlide><img src={Testimonial} alt="BannerBig" className='w-full h-auto ' /></SwiperSlide>
                 <SwiperSlide><img src={Testimonial2} alt="BannerBig" className='w-full h-auto' /></SwiperSlide>
                 <SwiperSlide><img src={Testimonial3} alt="BannerBig" className='w-full h-auto' /></SwiperSlide>
                 <SwiperSlide><img src={Testimonial} alt="BannerBig" className='w-full h-auto' /></SwiperSlide>

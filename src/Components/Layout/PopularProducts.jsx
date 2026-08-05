@@ -4,7 +4,7 @@ import axios from 'axios'
 import { GoArrowRight } from "react-icons/go";
 import { FaStar, FaStarHalfAlt, FaRegStar, FaHeart, FaEye, FaShoppingBag } from "react-icons/fa";
 import { Link } from 'react-router';
-export const Products = () => {
+export const PopularProducts = () => {
 
  let [pro,setPro]=useState([])
     

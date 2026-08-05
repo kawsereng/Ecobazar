@@ -7,6 +7,8 @@ import {Forget}from "./pages/Forget"
 import {Details} from "./pages/Details"
 import  {MainLayout}  from "./Components/Layout/MainLayout";
 import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout"
+import  Cart  from "./pages/Cart";
 function App() {
 
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/Registation" element={<Registation />} />
           <Route path="/Forget" element={<Forget />} />
           <Route path="/Details" element={<Details/>} />
+          <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/Cart" element={<Cart />} />
         </Route>
       </Routes>
     </>

@@ -20,14 +20,14 @@ export const PopularCategories = () => {
  <>
     <Container>
         <div className='main py-6 sm:py-10'>
-            <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-[20px] sm:mb-[32px] gap-4 sm:gap-0'>
+            <div className='flex flex-col sm:flex-row justify-between items-start p-2 sm:items-center mb-[20px] sm:mb-[32px] gap-4 sm:gap-0'>
                 <h4 className='text-[#1A1A1A] font-semibold text-[24px] sm:text-[32px]'>Popular Categories</h4>
                 <Link className='flex items-center text-[#00B207] font-medium text-[14px] sm:text-[16px]'>
                     View All <GoArrowRight className='ml-2' />
                 </Link>
             </div>
             
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-5 text-[#1A1A1A] text-[14px] sm:text-[18px] font-medium'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-5 text-[#1A1A1A] text-[14px] p-2 sm:text-[18px] font-medium'>
                 
                 <div className='border-2 border-[#E5E5E5] rounded-lg w-full h-[150px] sm:h-[190px] hover:border-[#00B207] transition-all duration-200 flex flex-col items-center justify-center p-2 cursor-pointer group'>
                     <img src={Fresh} alt="Fresh Fruits" className='object-contain h-14 sm:h-20 mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300' />
